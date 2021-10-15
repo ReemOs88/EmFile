@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">EmFile</string>
+    <string name="name_app">EM-File</string>
+
+    <string name="patient">Patient</string>
+    <string name="hospital">Hospital</string>
+    <string name="patient_register">Patient Register</string>
+    <string name="full_name">Full name</string>
+    <string name="email">Email</string>
+    <string name="phone_number">Phone number</string>
+    <string name="password">Password</string>
+    <string name="id_or_iqama_number">Id or Iqama number</string>
+    <string name="female">Female</string>
+    <string name="male">Male</string>
+    <string name="health_information">Health Information</string>
+    <string name="allergy_type_if_any">Allergy type if any</string>
+    <string name="medical_insurance_company_name">Medical insurance company name</string>
+    <string name="chronic_disease_if_any">chronic disease if any</string>
+    <string name="vaccination_dates_for_new_born">Vaccination dates for new born</string>
+</resources>
