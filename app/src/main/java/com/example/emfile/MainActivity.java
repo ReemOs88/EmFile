@@ -5,7 +5,9 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Button;
+
+import com.example.emfile.hospital.HospitalLogin;
+import com.example.emfile.patient.PatientLogin;
 
 public class MainActivity extends AppCompatActivity {
     @Override
@@ -17,6 +19,8 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void hospital(View view) {
+            Intent intent=new Intent(MainActivity.this, HospitalLogin.class);
+            startActivity(intent);
     }
 
     public void patient(View view) {

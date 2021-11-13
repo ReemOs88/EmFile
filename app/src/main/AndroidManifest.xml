@@ -9,15 +9,18 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.EmFile">
-        <activity android:name=".VaccinationDate"></activity>
-        <activity android:name=".BookDoctorAppointment"></activity>
-        <activity android:name=".EditMedicalReport" ></activity>
-        <activity android:name=".MedicalReport"></activity>
-        <activity android:name=".PatientHome" ></activity>
-        <activity android:name=".HealthInformation" ></activity>
-        <activity android:name=".PatientRegister" ></activity>
-        <activity android:name=".PatientLogin" ></activity>
-        <activity android:name=".MainActivity" >
+        <activity android:name=".hospital.HospitalRegister"></activity>
+        <activity android:name=".hospital.HospitalLogin" />
+        <activity android:name=".hospital.HospitalHome" />
+        <activity android:name=".patient.VaccinationDate" />
+        <activity android:name=".patient.BookDoctorAppointment" />
+        <activity android:name=".patient.EditMedicalReport" />
+        <activity android:name=".patient.MedicalReport" />
+        <activity android:name=".patient.PatientHome" />
+        <activity android:name=".patient.HealthInformation" />
+        <activity android:name=".patient.PatientRegister" />
+        <activity android:name=".patient.PatientLogin" />
+        <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

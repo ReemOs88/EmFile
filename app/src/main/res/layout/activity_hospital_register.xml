@@ -6,72 +6,70 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".patient.BookDoctorAppointment">
-    <com.google.android.material.appbar.MaterialToolbar
-        android:id="@+id/topAppBar"
-        android:layout_width="match_parent"
-        android:layout_height="?attr/actionBarSize"
-        app:title="EM-File"
-        android:background="@color/main_color"
-        app:navigationIcon="@drawable/ic_baseline_arrow_back_ios_24"
-        app:menu="@menu/top_app_bar"
-        style="@style/Widget.MaterialComponents.Toolbar.Primary"
-        />
+    tools:context=".hospital.HospitalRegister">
+    <ImageView
+        android:layout_width="@dimen/_80sdp"
+        android:layout_height="@dimen/_100sdp"
+        android:src="@drawable/file3"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:layout_gravity="center"/>
+
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Book an appointment"
-        android:gravity="center"
+        android:text="@string/hospital_register"
+        android:textSize="@dimen/_20sdp"
         android:textStyle="bold"
         android:textColor="@color/second_color"
-        android:textSize="@dimen/_16ssp"/>
+        android:gravity="center"
+        android:layout_marginTop="@dimen/_5sdp"/>
     <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/hospital_name"
-        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+        android:id="@+id/hospital_name_register_et"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:hint="@string/hospital_name"
+        app:hintTextColor="@color/second_color"
+        app:boxStrokeColor="@color/second_color"
         android:layout_margin="@dimen/_10sdp"
-        app:hintTextColor="@color/main_color"
-        app:boxStrokeColor="@color/main_color"
-        android:hint="Hospital Name">
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
 
-        <AutoCompleteTextView
-            android:id="@+id/autoComplete_hospital_name"
+        <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:inputType="none"
+            android:backgroundTint="@color/white"
             />
 
     </com.google.android.material.textfield.TextInputLayout>
     <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/Doctor_name"
-        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+        android:id="@+id/hospital_id_register_et"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:hint="@string/hospital_id"
+        app:hintTextColor="@color/second_color"
+        app:boxStrokeColor="@color/second_color"
         android:layout_margin="@dimen/_10sdp"
-        app:hintTextColor="@color/main_color"
-        app:boxStrokeColor="@color/main_color"
-        android:hint="@string/doctor_name">
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
 
-        <AutoCompleteTextView
-            android:id="@+id/autoComplete_doctor_name"
+        <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:inputType="none"
+            android:backgroundTint="@color/white"
             />
 
     </com.google.android.material.textfield.TextInputLayout>
     <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/Specialization"
+        android:id="@+id/hospital_location_register_et"
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="@dimen/_10sdp"
         app:hintTextColor="@color/main_color"
         app:boxStrokeColor="@color/main_color"
-        android:hint="@string/specialization">
+        android:hint="@string/hospital_location">
+
         <AutoCompleteTextView
-            android:id="@+id/autoComplete_specialization"
+            android:id="@+id/autoComplete_hospital_location"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:inputType="none"
@@ -79,13 +77,14 @@
 
     </com.google.android.material.textfield.TextInputLayout>
     <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_hospital_register"
         android:layout_width="match_parent"
-        android:layout_marginStart="@dimen/_30sdp"
-        android:layout_marginEnd="@dimen/_30sdp"
-        android:layout_marginTop="@dimen/_30sdp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_20sdp"
+        android:layout_marginEnd="@dimen/_20sdp"
+        android:layout_marginBottom="@dimen/_10sdp"
         android:backgroundTint="@color/second_color"
-        android:onClick="book"
-        android:text="Book"
-        android:textAllCaps="false"
-        android:layout_height="wrap_content"/>
+        android:onClick="hospitalHome"
+        android:text="@string/register"
+        android:textAllCaps="false"/>
 </LinearLayout>

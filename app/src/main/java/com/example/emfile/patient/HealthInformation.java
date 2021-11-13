@@ -1,9 +1,12 @@
-package com.example.emfile;
+package com.example.emfile.patient;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+
+import com.example.emfile.R;
 
 public class HealthInformation extends AppCompatActivity {
 
@@ -14,5 +17,8 @@ public class HealthInformation extends AppCompatActivity {
     }
 
     public void patientHome(View view) {
+        Intent myIntent = new Intent(HealthInformation.this, PatientHome.class);
+
+        startActivity(myIntent);
     }
 }

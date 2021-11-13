@@ -1,14 +1,16 @@
-package com.example.emfile;
+package com.example.emfile.hospital;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
-public class VaccinationDate extends AppCompatActivity {
+import com.example.emfile.R;
+
+public class HospitalHome extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_vaccination_date);
+        setContentView(R.layout.activity_hospital_home);
     }
 }
